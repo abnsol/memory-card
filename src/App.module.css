@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'wotfard';
+    src: url('./assets/Wotfard-Regular-webfont/wotfard-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'wotfard';
+    background-image: linear-gradient(45deg,rgb(42, 42, 158),rgb(190, 8, 8));
+}
+  
+.card{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 0;
+    /* background-color: rgb(66, 15, 77); */
+    img{
+        height: 150px;
+        width: 150px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+    }
+
+    h1{
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 300ms ease-in-out transform;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template:225px 225px /225px 225px 225px 225px;
+    gap: 30px;
+    justify-content: center;
+    align-self: center;
+}
+
+.app {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    padding: 0px 30px 0 30px;
+}
+
+.gameBoard {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 0;
+    width: 200px;
+    height: 50px;
+    display: grid;
+    color: white;
+}
+
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'wotfard';
+    color: white;
+
+    button {
+        width: 200px;
+        height: 50px;
+        border-radius:10px;
+        border: none;
+        background-color: rgb(50, 189, 50);
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        outline: none;
+    }
+}
